@@ -337,6 +337,15 @@ a.news_link2:hover {
 
 /* Footer */
 
+.wrapper .footer {
+	background-color: black;
+	width: 1128px;
+	height: 100px;
+	clear: both;
+	position: absolute;
+	bottom: -400px;
+}
+
 .page_footer {
 	margin: 0;
 	padding-top: -400px;

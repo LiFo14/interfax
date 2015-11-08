@@ -174,9 +174,12 @@
 						</ul>
 					</div>
 			</div>
+			<div class="footer">
+				<p>Копирасты</p>
+			</div>
 		</div>
 		<!--<div class="page_footer">
-				<p>копирасты здесь</p>
+				
 		</div>-->
 	</body>
 </html>

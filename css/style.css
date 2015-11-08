@@ -193,7 +193,7 @@ a.extra_nav_link:hover {
 }
 
 .navigation .nav_img {
-	width: 100%;
+	width: 83%;
 	position: absolute;
 	padding-top: 10px;
 }
@@ -339,13 +339,19 @@ a.news_link2:hover {
 
 .wrapper .footer {
 	background-color: black;
-	width: 1128px;
-	height: 100px;
+	width: 85%;
+	height: 400px;
 	clear: both;
 	position: absolute;
-	bottom: -400px;
+	bottom: -170%;
+	text-align: center;
 }
 
+.footer p {
+	font-size: 40px;
+	color: white;
+} 
+/*
 .page_footer {
 	margin: 0;
 	padding-top: -400px;
@@ -356,10 +362,5 @@ a.news_link2:hover {
 	border: 1px solid #000020;
 	background-color: #000020;
 	text-align: center;
-	#width: 100%;
 }
 
-.page_footer p {
-	font-size: 40px;
-	color: white;
-} 

@@ -192,7 +192,6 @@ a.extra_nav_link:hover {
 	color: red;
 }
 
-
 .navigation .nav_img {
 	width: 100%;
 	position: absolute;
@@ -236,21 +235,26 @@ a.nav_extra_link:hover {
 	color: #000000;
 }
 
-/* Sections 
+/* Sections */
+
+#main {
+	width: 94%;
+	margin-top: 10%;
+	margin-left: 25px;
+	position: relative;
+}
 
 #posts {
-	position: relative;
-	margin: 0;
-	margin-top: 50px;
-	margin-left: 25px;
+	position: absolute;
 	width: 100%;
+	margin: 0;
 	height: 450px; 
 }
 
 hr.news_line {
 	margin: 0;
 	padding: 0;
-	width: 815px;
+	width: 70%;
 	border: none;
 	border-top: 1px dotted #ccc;
 	color: #c0c0c0;
@@ -267,10 +271,11 @@ hr.news_line:after {
 }
 
 .post {
-	width: 800px;
+	width: 75%;
 	height: 300px;
+	margin-right: 25%;
 	float: left;
-	display: inline-block;
+	display: inline;
 }
 
 .main_news_wrap {
@@ -298,13 +303,12 @@ hr.news_line:after {
 }
 
 .side_bar {
-	margin: 0;
+	position: absolute;
+	width: 25%;
+	margin: -2.3% 0 0 75%;
 	padding: 0;
-	margin-top: -50px;
-	margin-right: 60px;
 	float: right;
 	display: block;
-	width: 270px;
 }
 
 .news_list2 {
@@ -331,7 +335,7 @@ a.news_link2:hover {
 	color: #808080;
 }
 
-/* Footer 
+/* Footer */
 
 .page_footer {
 	margin: 0;
@@ -349,4 +353,4 @@ a.news_link2:hover {
 .page_footer p {
 	font-size: 40px;
 	color: white;
-} */
+} 

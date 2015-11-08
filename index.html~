@@ -39,43 +39,37 @@
 			
 			<div class="navigation">
 				<ul class="nav_list">
-					<li><a class="nav_link"  href="#">Главное</a></li>
-					<li><a class="nav_link"  href="#">В России</a></li>
-					<li><a class="nav_link"  href="#">В мире</a></li>
-					<li><a class="nav_link"  href="#">Экономика</a></li>
-					<li><a class="nav_link"  href="#">Спорт</a></li>
-					<li><a class="nav_link"  href="#">Культура</a></li>
-					<li><a class="nav_link"  href="#">Москва</a></li>
-					<li><a class="nav_link"  href="#">Все новости</a></li>
-					<li><a class="nav_link"  href="#">Сюжеты</a></li>
-					<li><a class="nav_link"  href="#">Фото</a></li>
+					<li><a class="nav_link" href="#">Главное</a></li>
+					<li><a class="nav_link" href="#">В России</a></li>
+					<li><a class="nav_link" href="#">В мире</a></li>
+					<li><a class="nav_link" href="#">Экономика</a></li>
+					<li><a class="nav_link" href="#">Спорт</a></li>
+					<li><a class="nav_link" href="#">Культура</a></li>
+					<li><a class="nav_link" href="#">Москва</a></li>
+					<li><a class="nav_link" href="#">Все новости</a></li>
+					<li><a class="nav_link" href="#">Сюжеты</a></li>
+					<li><a class="nav_link" href="#">Фото</a></li>
 					<li>
-						<a class="extra_nav_link" href="#">
-							<span id="inner_head2">
-								поиск
-							</span>
-						</a>
+						<span class="search_content">
+							<a class="extra_nav_link" href="#">
+									<span id="inner_head2">
+										Поиск (будет, потом)
+									</span>
+							</a>
+						</span>
 					</li>
 				</ul>
-			</div>
-<!-- Later 
-			<div class="mid_menu">
-				<div class="mid_menu_img1">
+				<div class="nav_img">
 					<img src="img/mid_menu.png" title="interfax" width="1125" height="80" alt="interfax"/>
 				</div>
-				<!--<div class="mid_menu_img2">
-					<img src="img/mid_menu_arrow.png" title="interfax" width="10" height="10" alt="interfax"/>
-				</div>
-				<div class="mid_menu_list">
-					<ul class="header_list3">
-							<li><a class="header_link3" href="#">конфликт<a></li>
-							<li><a class="header_link3" href="#">подтверждение<a></li>
-							<li><a class="header_link3" href="#">правительство<a></li>
-							<li><a class="header_link3" href="#">шувалов<a></li>
-					</ul>
-				</div>
-			</div> 
-			<div id="posts">
+				<ul class="nav_extra_list">
+						<li><a class="header_link3" href="#">конфликт<a></li>
+						<li><a class="header_link3" href="#">подтверждение<a></li>
+						<li><a class="header_link3" href="#">правительство<a></li>
+						<li><a class="header_link3" href="#">шувалов<a></li>
+				</ul>
+			</div>
+			<!-- Later <div id="posts">
 				<hr class="news_line"/>
 				<div class="post">
 					<div class="main_news_wrap">

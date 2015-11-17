@@ -14,6 +14,10 @@ html, body {
 
 /* Header */
 
+a, p {
+	font-family: "Proxima Nova", "sans-serif";
+}
+
 #page_header_top {
 	width: 98%;
 	margin: 0;

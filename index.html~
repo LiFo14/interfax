@@ -33,7 +33,7 @@
 			<div class="page_header_center">
 				<img src="img/interfax.png" title="interfax" alt="interfax" class="inter_img"/>
 				<p id="money_info">Доллар США 01.10 <b class="b_money">65,74</b> <span class="span_red">-0,50</span>   ЕВРО 1.10 <b class="b_money">73,78</b> <span class="span_red">-0,81</span>   Нефть 30.09 <b class="b_money">48,43</b> <span class="span_green">+0,00</span></p>
-				<hr id="money_info_line">	
+				<!--<hr id="money_info_line">	-->
 			</div>
 			<div class="navigation">			
 				<ul class="nav_list">
@@ -58,21 +58,21 @@
 					</li>
 				</ul>
 				<div class="nav_img">
-					<img src="img/mid_menu.png" title="interfax" width="1125" height="80" alt="interfax"/>
+					<img src="img/men.png" title="interfax" width="1125" height="85" alt="interfax"/>
 				</div>
-				<ul class="nav_extra_list">
+				<!--<ul class="nav_extra_list">
 						<li><a class="nav_extra_link" href="#">конфликт<a></li>
 						<li><a class="nav_extra_link" href="#">подтверждение<a></li>
 						<li><a class="nav_extra_link" href="#">правительство<a></li>
 						<li><a class="nav_extra_link" href="#">шувалов<a></li>
-				</ul>
+				</ul>-->
 			</div>
 			<div id="main">
 					<hr class="news_line"/>
 					<div id="posts">
 						<div class="post">				
 							<div class="main_news_wrap">
-								<p class="news">В ФБР заявили о возможных атаках террористов в США по примеру парижских</p>00
+								<p class="news">В ФБР заявили о возможных атаках террористов в США по примеру парижских</p>
 								<hr class="news_splitter"/>
 								<p class="news">В Москве у дипмиссии Франции усилены меры безопасности</p>
 								<hr class="news_splitter"/>

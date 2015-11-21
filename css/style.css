@@ -19,6 +19,7 @@ a, p {
 }
 
 #page_header_top {
+	position: 	relative;
 	width: 98%;
 	margin: 0;
 	background-color: #000030;
@@ -36,12 +37,11 @@ a, p {
 }
 
 #page_header_top #nav_glob ul.header_list li {
-	padding-left: 4px;	
+	padding-left: 6px;	
 	display: inline;
 	margin-top: 20px;
 	border: 1px solid #000030;
-	font-size: 13px;
-	font-family: Dejavu Serif, "sans-cerif";
+	font-size: 15px;
 }
 
 a.header_link:link {
@@ -65,7 +65,7 @@ a.header_link:hover {
 }
 
 #page_header_top #nav_glob ul.header_list li #inner_head{
-	padding: 5px 10px 5px 10px;
+	padding: 5px 25px 5px 10px;
 	border: 1px solid #009B80;
 	background-color: #009B80;
 	border-radius: 35px;

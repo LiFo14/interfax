@@ -1,6 +1,9 @@
 <?php
-include("config.php");
-
+	include("config.php");
+	if(isset($_POST['search'])) {
+		$cont = $_POST['search_content'];
+		searchPost($cont);
+	}
 ?>
 <html>
 	<head>
@@ -38,7 +41,7 @@ include("config.php");
 				<p id="money_info">Доллар США 01.10 <b class="b_money">65,74</b> <span class="span_red">-0,50</span>   ЕВРО 1.10 <b class="b_money">73,78</b> <span class="span_red">-0,81</span>   Нефть 30.09 <b class="b_money">48,43</b> <span class="span_green">+0,00</span></p>
 				<!--<hr id="money_info_line">	-->
 			</div>
-			<div class="navigation">			
+			<div class="navigation">
 				<ul class="nav_list">
 					<li><a class="nav_link" href="#">Главное</a></li>
 					<li><a class="nav_link" href="#">В России</a></li>
@@ -66,7 +69,7 @@ include("config.php");
 			<div id="main">
 					<hr class="news_line"/>
 					<div id="posts">
-						<div class="post">				
+						<div class="post">
 							<div class="main_news_wrap">
 								<p class="news">В ФБР заявили о возможных атаках террористов в США по примеру парижских</p>
 								<hr class="news_splitter"/>
@@ -103,7 +106,7 @@ include("config.php");
 								<p class="news">Объем крупных пожертвований в 2014 году упал на 10%</p>
 								<hr class="news_splitter"/>
 								<p class="news">Турция предупреждала власти Франции об одном из смертников</p>
-							</div>		
+							</div>
 						</div>
 					</div>
 					<div class="extra_post">
@@ -147,7 +150,7 @@ include("config.php");
 									<li>МИД РФ не увидел причин для ограничения авиасообщения между Россией и Европой</li>
 									<li>Спорное между "Роснефтью" и "Газпромом" Мурманское месторождение выставят на аукцион</li>
 									<li>Демонтированную стелу Дружбы между Украиной и РФ в Харькове вернут на место</li>
-									<li>Путин и Си Цзиньпин обсудили проект "Ямал СПГ"</li>	
+									<li>Путин и Си Цзиньпин обсудили проект "Ямал СПГ"</li>
 									<li>В ДНР заявили о 20 оставшихся пленных украинских силовиках</li>
 									<li>Россия и Япония активизируют торговое сотрудничество</li>
 									<li>Мировые продажи смартфонов в третьем квартале выросли на 6,8%</li>
@@ -157,7 +160,7 @@ include("config.php");
 									<li>Китай задумал реконструировать объекты времен СССР для турпоездок</li>
 									<li>Эйфелева башня откроется в понедельник</li>
 									<li>Трое рабочих получили ожоги на Челябинском металлургическом комбинате</li>
-									<li>GM снизил количество отзываемых в РФ Opel Meriva с 9,3 тыс до 584 штук</li>	
+									<li>GM снизил количество отзываемых в РФ Opel Meriva с 9,3 тыс до 584 штук</li>
 									<li>Минздрав России разработает единые правила диагностики</li>
 									<li>Правительство намерено ликвидировать ряд ядерных объектов</li>
 									<li>Предоплаченных поставок российского газа Украине хватит до конца недели</li>
@@ -167,7 +170,7 @@ include("config.php");
 									<li>В Москве налетчики с битами разгромили узбекское кафе</li>
 									<li>Власти Франции задумались об изменении формата конференции ООН по климату</li>
 									<li>На Керченской переправе объявлено штормовое предупреждение</li>
-									<li>"НОВАТЭК" потратил около $2 млн на выкуп своих акций</li>			-->						
+									<li>"НОВАТЭК" потратил около $2 млн на выкуп своих акций</li>			-->
 								</ul>
 						</div>
 					<div class="side_bar">
@@ -185,7 +188,7 @@ include("config.php");
 						<ul class="news_list2">
 							<li>
 								<a class="news_link2" href="#">Москва<br><a>
-								<span class="side_bar_news">Штрафы с грузовиков с 15 ноября будут взиматься только в Подмосковье</span> 
+								<span class="side_bar_news">Штрафы с грузовиков с 15 ноября будут взиматься только в Подмосковье</span>
 								<hr noshade size="1" color="grey">
 							</li>
 							<li>
@@ -207,7 +210,7 @@ include("config.php");
 						<ul class="news_list2">
 							<li>
 								<a class="news_link2" href="#">
-									<img src="img/photo1.png" alt="Церемония вручения"/>								
+									<img src="img/photo1.png" alt="Церемония вручения"/>
 								</a>
 							</li>
 							<li>

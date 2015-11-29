@@ -4,7 +4,7 @@
 	$messages=array();
 	$dbhost="localhost";
 	$dbuser="root";
-	$dbpass="321";
+	$dbpass="123";
 	$dbname="InterfaxDB";
 	connectToDB();
 ?>

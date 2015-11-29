@@ -1,3 +1,4 @@
-function switch(element) {
-	if (element.style.color != green) element.style.color = 'red';
+function search() {
+	if (event.keyCode == 13) document.form.submit();
+	alert("Done!");
 }

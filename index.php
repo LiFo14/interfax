@@ -1,10 +1,13 @@
-<!DOCTYPE html>
+<?php
+include("config.php");
+
+?>
 <html>
 	<head>
 		<title>Interfax</title>
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<script type="text/javascript" src="js/img_switch.js"></script>
+		<script type="text/javascript" src="js/functions.js"></script>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -48,24 +51,17 @@
 					<li><a class="nav_link" href="#">Сюжеты</a></li>
 					<li><a class="nav_link" href="#">Фото</a></li>
 					<li>
-						<span class="search_content">
-							<a class="extra_nav_link" href="#">
-									<span id="inner_head2">
-										Поиск (будет, потом)
-									</span>
-							</a>
+						<span class="search">
+							<form action=index.php method="post">
+								<input type="text" name="search_content" placeholder="Поиск по сайту">
+								<input type="submit" name="search" value="search">
+							</form>
 						</span>
 					</li>
 				</ul>
 				<div class="nav_img">
 					<img src="img/men.png" title="interfax" width="1125" height="95" alt="interfax"/>
 				</div>
-				<!--<ul class="nav_extra_list">
-						<li><a class="nav_extra_link" href="#">конфликт<a></li>
-						<li><a class="nav_extra_link" href="#">подтверждение<a></li>
-						<li><a class="nav_extra_link" href="#">правительство<a></li>
-						<li><a class="nav_extra_link" href="#">шувалов<a></li>
-				</ul>-->
 			</div>
 			<div id="main">
 					<hr class="news_line"/>

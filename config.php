@@ -1,0 +1,10 @@
+<?php
+	error_reporting(E_ALL);
+	include_once("functions.php");
+	$messages=array();
+	$dbhost="localhost";
+	$dbuser="root";
+	$dbpass="321";
+	$dbname="InterfaxDB";
+	connectToDB();
+?>

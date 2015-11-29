@@ -3,7 +3,7 @@
 	<head>
 		<title>Interfax</title>
 		<meta charset="utf-8"/>
-		<link rel="stylesheet" type="text/css" href="css/post_style.css">
+		<link rel="stylesheet" type="text/css" href="../css/post_style.css">
 		<script type="text/javascript" src="js/img_switch.js"></script>
 	</head>
 	<body>
@@ -30,10 +30,8 @@
 					</ul>
 				</div>
 			</div>
-			<div class="page_header_center">
-				<img src="img/interfax.png" title="interfax" alt="interfax" class="inter_img"/>
-			</div>
 			<div class="navigation">			
+				<img src="../img/interfax.png" title="interfax" alt="interfax" class="inter_img"/>
 				<ul class="nav_list">
 					<li><a class="nav_link" href="#">Главное</a></li>
 					<li><a class="nav_link" href="#">В России</a></li>
@@ -45,27 +43,22 @@
 					<li><a class="nav_link" href="#">Все новости</a></li>
 					<li><a class="nav_link" href="#">Сюжеты</a></li>
 					<li><a class="nav_link" href="#">Фото</a></li>
-					<!--<li>
-						<span class="search_content">
-							<a class="extra_nav_link" href="#">
-									<span id="inner_head2">
-										Поиск (будет, потом)
-									</span>
-							</a>
-						</span>
-					</li>
 				</ul>
-				<!--<div class="nav_img">
-					<img src="img/mid_menu.png" title="interfax" width="1125" height="80" alt="interfax"/>
-				</div>
-				<ul class="nav_extra_list">
-						<li><a class="nav_extra_link" href="#">конфликт<a></li>
-						<li><a class="nav_extra_link" href="#">подтверждение<a></li>
-						<li><a class="nav_extra_link" href="#">правительство<a></li>
-						<li><a class="nav_extra_link" href="#">шувалов<a></li>
-				</ul>-->
 			</div>
 			<div id="main">
+				<div class="post">
+					<h1>Общественная палата призвала к борьбе с пропагандой терроризма в соцсетях</h1>
+					<p>Москва. 29 ноября. INTERFAX.RU - Общественная палата РФ (ОП РФ) обратилась к гражданам России с просьбой помочь в противодействии пропаганды терроризма и экстремизма в интернете
+					</p>
+					<p>"Общественная палата РФ начала работу по ликвидации пропаганды терроризма и экстремизма в интернете и просит всех неравнодушных граждан оказать посильную помощь в этой борьбе", - говорится в сообщении, опубликованном в воскресенье на странице ОП в ВКонтакте.
+					</p>		
+					<p>По ее данным, на сегодняшний день пропаганда "Исламского государства" (ИГ, запрещенная в РФ организация) ведется через десятки тысяч аккаунтов в социальных сетях, и большинство террористов и их пособников даже не скрывают, что пишут с той части территории Сирии и Ирака, которая захвачена террористическими организациями.
+					</p>
+					<p>"Очевидно, что вся эта ситуация требует пристального внимания со стороны гражданского общества, поэтому, для выявления таких аккаунтов и адресов, в ОП РФ начал функционировать адрес stopterror@oprf.ru, на который можно присылать ссылки на аккаунты Твиттер, Фейсбук, ВКонтакте и любой другой интернет-ресурс с пропагандой терроризма и вражды" - отмечается в сообщении со ссылкой на члена ОП Максима Григорьева.
+					</p>
+					<p>Григорьев отметил, что после экспертной оценки адрес будет передан в органы власти для блокирования, а содержащаяся в нем информация будет использована в разработке стратегии по противодействию терроризму. Ссылку можно отправить с помощью специальной формы на сайте.
+					</p>
+				</div>
 					<div class="side_bar">
 						<p class="side_bar_headers"><b>СЮЖЕТЫ</b></p>
 						<ul class="news_list1">
@@ -103,17 +96,17 @@
 						<ul class="news_list2">
 							<li>
 								<a class="news_link2" href="#">
-									<img src="img/photo1.png" alt="Церемония вручения"/>								
+									<img src="../img/photo1.png" alt="Церемония вручения"/>								
 								</a>
 							</li>
 							<li>
 								<a class="news_link2" href="#">
-									<img src="img/photo2.png" alt="Церемония вручения"/>
+									<img src="../img/photo2.png" alt="Церемония вручения"/>
 								</a>
 							</li>
 							<li>
 								<a class="news_link2" href="#">
-									<img src="img/photo3.png" alt="Церемония вручения"/>
+									<img src="../img/photo3.png" alt="Церемония вручения"/>
 								</a>
 							</li>
 							<li>

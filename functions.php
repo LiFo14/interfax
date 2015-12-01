@@ -10,20 +10,22 @@
 	}
 
 	function searchPost($cont) {
-		$data = getData($cont);
+		getData($cont);
 		#echo "<h1>HI ".$data."</h1>";
 	}
 
 	function getData($cont) {
-		exec("python posts/lookThough.py $cont", $output);
-		echo $output;
-		/*$sql = "SELECT * FROM news";
+		$sql = "SELECT * FROM news";
 		$data = mysql_query($sql) or die("Error occurred - ".mysql_error());
 		while ($row = mysql_fetch_array($data)) {
-			echo $row['id']."<br>";
-			echo $row['news_path']."<br>";
-
-		}*/
+			#echo $row['id']."<br>";
+			#echo $row['news_path']."<br>";
+			$path = $row['news_path'];
+			echo $path."<br>";
+			echo $cont."<br>";
+			$output = shell_exec("python lookThough.py $path $cont");
+			echo "<pre>$output</pre>";
+		}
 	}
 
 ?>

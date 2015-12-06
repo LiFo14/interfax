@@ -1,5 +1,4 @@
 <?php
-
 	function connectToDB() {
 	  	global $link, $dbhost, $dbuser, $dbpass, $dbname;
 	    $link = mysql_connect("$dbhost", "$dbuser", "$dbpass");
@@ -8,24 +7,38 @@
 			}
 		mysql_select_db($dbname, $link);
 	}
-
 	function searchPost($cont) {
-		getData($cont);
-		#echo "<h1>HI ".$data."</h1>";
+		$data = getData($cont);
+		#echo '<a href='."http://interfax.ru/".$data[0].'>link</a>';
+		#echo "<pre>".print_r($data)."</pre>";
+		#header('Location: search_result.php?path='.$data);
+		#exit();
+	}
+	function getData($cont) {
+		$result = easyQuery();
+		$paths = array();
+		while ($row = mysql_fetch_array($result)) {
+			$path = $row['news_path'];
+			$output = shell_exec("python lookThough.py $path $cont");
+			$state = (bool)$output ? true : false;
+			if ($state == 1) {
+				$paths[] = $path;
+			}
+		}
+		return $paths;
 	}
 
-	function getData($cont) {
+	function easyQuery() {
 		$sql = "SELECT * FROM news";
-		$data = mysql_query($sql) or die("Error occurred - ".mysql_error());
-		while ($row = mysql_fetch_array($data)) {
-			#echo $row['id']."<br>";
-			#echo $row['news_path']."<br>";
-			$path = $row['news_path'];
-			echo $path."<br>";
-			echo $cont."<br>";
-			$output = shell_exec("python lookThough.py $path $cont");
-			echo "<pre>$output</pre>";
-		}
+		$result = mysql_query($sql) or die("Error occurred - ".mysql_error());
+		return $result;
+	}
+
+	function checkOutPosts() {
+		global $data;
+		echo var_dump($data);
+		echo $data;
+		echo '<a href='."http://interfax.ru/".$data[0].'>link</a>';
 	}
 
 ?>

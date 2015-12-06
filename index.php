@@ -55,7 +55,7 @@
 					<li><a class="nav_link" href="#">Фото</a></li>
 					<li>
 						<span class="search">
-							<form action=index.php method="post">
+							<form action=search_result.php method="post">
 								<input type="text" name="search_content" placeholder="Поиск по сайту">
 								<input type="submit" name="search" value="search">
 							</form>

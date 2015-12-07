@@ -51,9 +51,8 @@
 			<div id="main">
 				<div class="post">
           <?php
-            #$data = $_GET['path'];
-            #echo $data;
-            checkOutPosts();
+            #echo $_GET['q']."<br>";
+            checkOutPosts($_GET['q']);
           ?>
 				</div>
 					<div class="side_bar">

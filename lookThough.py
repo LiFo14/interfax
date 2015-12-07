@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import sys
 
 def searchWord():
@@ -14,9 +14,9 @@ def searchWord():
                 state = True
             i+=1
     if (state):
-        print(state)
-    """else:
-        print(state) """
+        print("True")
+    else:
+        print("False")
 
 if __name__ == "__main__":
     searchWord()

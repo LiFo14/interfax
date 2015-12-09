@@ -14,9 +14,9 @@ def searchWord():
                 state = True
             i+=1
     if (state):
-        print("True")
+        print("1")
     else:
-        print("False")
+        print("0")
 
 if __name__ == "__main__":
     searchWord()

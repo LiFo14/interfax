@@ -16,11 +16,12 @@
 
 	function getData($cont) {
 		$result = easyQuery();
-		$paths = array();
+		#$paths = array();
 		while ($row = mysql_fetch_array($result)) {
 			$path = $row['news_path'];
 			$output = shell_exec("python lookThough.py $path $cont");
-			if ($output != false) {
+			#echo gettype($output);
+			if ($output == 1) {
 				$paths[] = $path;
 			}
 		}
@@ -35,10 +36,15 @@
 
 	function checkOutPosts($cont) {
 		$data = getData($cont);
-		foreach ($data as $value) {
-			$header = shell_exec("python lookForH.py $value");
-			echo '<br><a href='."http://interfax.ru/".$value.'>'.$header.'</a>';
+		#var_dump($data);
+		if (empty($cont) or empty($data)) {
+			echo "К сожалению по вашему запросу ничего не найдено";
+			echo '<br><a href="http://interfax.ru/index.php">Вернуться на главную</a>';
+		} else {
+			foreach ($data as $value) {
+				$header = shell_exec("python lookForH.py $value");
+				echo '<br><a href='."http://interfax.ru/".$value.'>'.$header.'</a>';
+			}
 		}
-
 	}
 ?>

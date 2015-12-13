@@ -6,6 +6,7 @@
 	<head>
 		<title>Interfax</title>
 		<meta charset="utf-8"/>
+    <link rel="shortcut icon" href="http://www.interfax.ru/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="css/post_style.css">
 		<script type="text/javascript" src="js/img_switch.js"></script>
 	</head>

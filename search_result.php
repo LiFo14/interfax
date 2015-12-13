@@ -6,7 +6,7 @@
 	<head>
 		<title>Interfax</title>
 		<meta charset="utf-8"/>
-		<link rel="stylesheet" type="text/css" href="../css/post_style.css">
+		<link rel="stylesheet" type="text/css" href="css/post_style.css">
 		<script type="text/javascript" src="js/img_switch.js"></script>
 	</head>
 	<body>
@@ -51,7 +51,6 @@
 			<div id="main">
 				<div class="post">
           <?php
-            #echo $_GET['q']."<br>";
             checkOutPosts($_GET['q']);
           ?>
 				</div>

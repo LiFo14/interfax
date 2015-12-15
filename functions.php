@@ -23,9 +23,13 @@
 		return $paths;
 	}
 
-	function easyQuery() {
-		$sql = "SELECT * FROM news";
-		$result = mysql_query($sql) or die("Error occurred - ".mysql_error());
+	function easyQuery($id) {
+		if (isset($id)) {
+			$sql = "SELECT * FROM news WHERE id='$id'";
+		} else {
+			$sql = "SELECT * FROM news";
+		}
+		$result = mysql_query($sql) or die("Error occurred - ".mysql_error($link));
 		return $result;
 	}
 
@@ -43,10 +47,9 @@
 	}
 
 	function addPost(){
-		$raw_file_path = "/var/www/interfax.ru/raw texts/";
+		$raw_file_path = "/var/www/interfax.ru/raw data/texts/";
 		$raw_file_path .= $_FILES['text']['name'];
-		$new_post_path = createPostFile($raw_file_path);
-
+		createPostFile($raw_file_path);
 	}
 
 	function createPostFile($raw_file_path) {
@@ -57,7 +60,8 @@
 		$page .= $text;
 		$page .= $end_file;
 		$name = writePostFile($page);
-		moveNewPost($name);
+		$new_name = moveNewPost($name);
+		addToDb($new_name);
 	}
 
 	function writePostFile($page) {
@@ -72,24 +76,57 @@
 		$new_name = getName();
 		$new_name = "posts/".$new_name;
 		rename($name,$new_name);
+		return $new_name;
 	}
 
 	function getName() {
 		$post_names = scandir("posts/");
 		unset($post_names[0]);
 		unset($post_names[1]);
-		$index = substr_replace($post_names, '', 0, 4);
-		$index = substr_replace($index, '', 1, 4);
-		$i = $index[0];
-		foreach ($index as $val) {
-			$i = intval($i);
-			$val = intval($val);
-			if ($i < $val) {
-				$i = $val;
+		if ($post_names == NULL){
+			$i = 0;
+		} else {
+			$index = substr_replace($post_names, '', 0, 4);
+			$index = substr_replace($index, '', 1, 4);
+			$i = $index[0];
+			foreach ($index as $val) {
+				$i = intval($i);
+				$val = intval($val);
+				if ($i < $val) {
+					$i = $val;
+				}
 			}
 		}
 		$i+=1;
 		return "post".$i.".php";
+	}
+
+	function addToDb($path) {
+		global $link;
+		$sql = "INSERT INTO news (news_path) VALUES ('$path')";
+		$result=mysql_query($sql, $link) or die("Died inserting into db.  Error returned if any: ".mysql_error($link));
+	}
+
+	function deleteFromDb($id){
+		global $link;
+		$sql_del = "DELETE FROM news WHERE id='$id'";
+		mysql_query($sql_del, $link) or die("Error occured 1 ".mysql_error($link));
+	}
+
+	function getFullData() {
+		$result = easyQuery();
+		return $result;
+	}
+
+	function removePost($id){
+		$result = easyQuery($id);
+		while ($row = mysql_fetch_array($result)) {
+			$path = $row['news_path'];
+		}
+		unlink($path);
+		deleteFromDb($id);
+		header('Location: admin.php');
+		exit();
 	}
 
 ?>

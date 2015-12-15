@@ -3,6 +3,9 @@
 	if (isset($_POST['add'])) {
 		addPost();
 	}
+	if (isset($_POST['remove'])) {
+		removePost($_POST['id']);
+	}
 ?>
 <html>
 	<head>
@@ -55,22 +58,31 @@
 				<div class="post">
 					<div>
 						<form action=admin.php method="post" enctype="multipart/form-data">
-						<!--<input type="text" name="header" placeholder="Header">-->
 						<p><label for="">Выберите файл со статьей: </label>
 						<input type="file" name="text" accept="text/plain"></p>
-						<!--<p><input type="text" name="event_date" placeholder="Date"></p>-->
-						<p><label for="">Выберите изображение для статьи: </label>
-						<input type="file" name="image" accept="image/jpeg"></p>
-						<p><input type="submit" name="add" value="Добавить"></p>
-						<!--<?php
-							echo '<input type="submit" name="checkout" value="checkout posts"><br>';
-							checkoutPostDir();
-							#echo '<br><input type="submit" name="make" value="makePost"><br>';
-							#makePost();
-						 ?>-->
+						<p><input type="submit" name="add" value="Добавить"></p><br>
+						<input type="submit" name="remove" value="Удалить">
+						<input type="text" name="id" placeholder="Введите ID поста"><br>
+						<?php
+							$data = getFullData();
+							echo"<h4>Список загруженных статей:</h4>";
+							echo "<form action=admin.php method=post>";
+							echo "<table >";
+							echo "<tr>
+								<td>ID</td>
+								<td>Путь к посту</td>
+							</tr>";
+							while ($row = mysql_fetch_array($data)) {
+								echo "<tr>
+									<td>".$row['id']."</td>
+									<td>".$row['news_path']."</td>
+								</tr>";
+							}
+							echo "</table></form>";
+						?>
 				</form>
 			</div>
-				</div>
+				<!--</div>
 					<div class="side_bar">
 						<p class="side_bar_headers"><b>СЮЖЕТЫ</b></p>
 						<ul class="news_list1">
@@ -128,7 +140,7 @@
 			</div>
 			<div class="footer">
 				<p>Копирасты</p>
-			</div>
+			</div>-->
 		</div>
 	</body>
 </html>

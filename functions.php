@@ -41,4 +41,55 @@
 			}
 		}
 	}
+
+	function addPost(){
+		$raw_file_path = "/var/www/interfax.ru/raw texts/";
+		$raw_file_path .= $_FILES['text']['name'];
+		$new_post_path = createPostFile($raw_file_path);
+
+	}
+
+	function createPostFile($raw_file_path) {
+		$begin_file = file_get_contents("pattern/begin_file_pattern.txt");
+		$end_file = file_get_contents("pattern/end_file_pattern.txt");
+		$text = file_get_contents($raw_file_path);
+		$page = $begin_file;
+		$page .= $text;
+		$page .= $end_file;
+		$name = writePostFile($page);
+		moveNewPost($name);
+	}
+
+	function writePostFile($page) {
+		$file_name = "file.php";
+		$new_post = fopen($file_name, "a");
+		fwrite($new_post, $page);
+		fclose($new_post);
+		return $file_name;
+	}
+
+	function moveNewPost($name) {
+		$new_name = getName();
+		$new_name = "posts/".$new_name;
+		rename($name,$new_name);
+	}
+
+	function getName() {
+		$post_names = scandir("posts/");
+		unset($post_names[0]);
+		unset($post_names[1]);
+		$index = substr_replace($post_names, '', 0, 4);
+		$index = substr_replace($index, '', 1, 4);
+		$i = $index[0];
+		foreach ($index as $val) {
+			$i = intval($i);
+			$val = intval($val);
+			if ($i < $val) {
+				$i = $val;
+			}
+		}
+		$i+=1;
+		return "post".$i.".php";
+	}
+
 ?>

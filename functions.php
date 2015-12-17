@@ -35,15 +35,17 @@
 
 	function checkOutPosts($cont) {
 		$data = getData($cont);
+		echo '<span class="search_res">';
 		if (empty($cont) or empty($data)) {
-			echo "К сожалению по вашему запросу ничего не найдено";
+			echo "К сожалению по вашему запросу ничего не найдено<br>";
 			echo '<br><a href="http://interfax.ru/index.php">Вернуться на главную</a>';
 		} else {
 			foreach ($data as $value) {
 				$header = shell_exec("python lookForH.py $value");
-				echo '<br><a href='."http://interfax.ru/".$value.'>'.$header.'</a>';
+				echo '<br><br><a href='."http://interfax.ru/".$value.'>'.$header.'</a>';
 			}
 		}
+		echo "</span>";
 	}
 
 	function addPost(){
@@ -127,6 +129,23 @@
 		deleteFromDb($id);
 		header('Location: admin.php');
 		exit();
+	}
+
+	function makeAdminStuff($data) {
+		echo"<h4>Список загруженных новостей:</h4>";
+		echo "<form action=admin.php method=post>";
+		echo '<table rules="all">';
+		echo "<tr>
+			<td><div style='padding: 7;'>ID</div></td>
+			<td><div style='padding: 7;'>Путь к новости</div></td>
+		</tr>";
+		while ($row = mysql_fetch_array($data)) {
+			echo "<tr>
+				<td><div style='padding: 7;'>".$row['id']."</div></td>
+				<td><div style='padding: 7;'><a href=".$row['news_path'].">".$row['news_path']."</a></div></td>
+			</tr>";
+		}
+		echo "</table></form>";
 	}
 
 ?>

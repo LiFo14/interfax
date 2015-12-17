@@ -4,47 +4,34 @@
 		<title>Interfax</title>
 		<meta charset="utf-8"/>
 		<link rel="shortcut icon" href="http://www.interfax.ru/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" type="text/css" href="../css/post_style.css">
-		<script type="text/javascript" src="js/img_switch.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
 	</head>
 	<body>
-		<div class="wrapper">
-			<div id="page_header_top">
-				<div id="nav_glob">
-					<ul class="header_list">
-						<li><a class="header_link" href="#">Мобильная версия<a></li>
-						<li><a class="header_link" href="#">Об "Интерфаксе"<a></li>
-						<li><a class="header_link" href="#">Interfax.com<a></li>
-						<li><a class="header_link" href="#">Интервакс Россия<a></li>
-						<li><a class="header_link" href="#">Финмаркет<a></li>
-						<li><a class="header_link" href="#">Туризм<a></li>
-						<li><a class="header_link" href="#">Недвижимость<a></li>
-						<li><a class="header_link" href="#">Религия<a></li>
-						<li><a class="header_link" href="#">Конференции<a></li>
-						<li>
-							<a class="extra_header_link" href="#">
-								<span id="inner_head">
-									Вход для подписчиков
-								</span>
-							</a>
-						</li>
-					</ul>
-				</div>
+	<header>
+		<div class="topbar clearfix">
+			<ul class="top_navigation">
+				<li class="top">Мобильная версия</li>
+				<li class="top">Об "Интерфаксе"</li>
+				<li class="top">Interfax.com</li>
+				<li class="top">Интерфакс-Россия</li>
+				<li class="top">Финмаркет</li>
+				<li class="top">Туризм</li>
+				<li class="top">Недвижимость</li>
+				<li class="top">Религия</li>
+				<li class="top">Конференции</li>
+				<li class="followers">Вход для подписчиков</li>
+			</ul>
+		</div>
+		<div class="middlebar">
+			<div class="middleimg left">
+        <a href="../index.php">
+					<img alt="Interfax" src="../img/logo.png"/>
+				</a>
 			</div>
-			<div class="navigation">
-				<img src="../img/interfax.png" title="interfax" alt="interfax" class="inter_img"/>
-				<ul class="nav_list">
-					<li><a class="nav_link" href="../index.php">Главное</a></li>
-					<li><a class="nav_link" href="#">В России</a></li>
-					<li><a class="nav_link" href="#">В мире</a></li>
-					<li><a class="nav_link" href="#">Экономика</a></li>
-					<li><a class="nav_link" href="#">Спорт</a></li>
-					<li><a class="nav_link" href="#">Культура</a></li>
-					<li><a class="nav_link" href="#">Москва</a></li>
-					<li><a class="nav_link" href="#">Все новости</a></li>
-					<li><a class="nav_link" href="#">Сюжеты</a></li>
-					<li><a class="nav_link" href="#">Фото</a></li>
-				</ul>
+			<div class="middlemainbar">
+				<p id="money_info">Доллар США 01.10 <b class="b_money">65,74</b> <span class="span_red">-0,50</span>   ЕВРО 1.10 <b class="b_money">73,78</b> <span class="span_red">-0,81</span>   Нефть 30.09 <b class="b_money">48,43</b> <span class="span_green">+0,00</span></p>
 			</div>
-			<div id="main">
-				<div class="post">
+		</div>
+	</header>
+	<main class="clearfix">
+		<div class="post">

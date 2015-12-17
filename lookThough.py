@@ -10,7 +10,7 @@ def searchWord():
     file = open(path, 'r')
     for line in file:
         for word in sword:
-            if word in line:
+            if word.lower() in line.lower():
                 state = True
             i+=1
     if (state):

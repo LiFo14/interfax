@@ -24,7 +24,7 @@
 		</div>
 		<div class="middlebar">
 			<div class="middleimg left">
-        <a href="../index.php">
+				<a href="../index.php">
 					<img alt="Interfax" src="../img/logo.png"/>
 				</a>
 			</div>
@@ -32,6 +32,7 @@
 				<p id="money_info">Доллар США 01.10 <b class="b_money">65,74</b> <span class="span_red">-0,50</span>   ЕВРО 1.10 <b class="b_money">73,78</b> <span class="span_red">-0,81</span>   Нефть 30.09 <b class="b_money">48,43</b> <span class="span_green">+0,00</span></p>
 			</div>
 		</div>
+
 	</header>
 	<main class="clearfix">
-		<div class="post">
+				<div class="search_post">

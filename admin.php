@@ -42,7 +42,7 @@
 		</div>
 	</header>
 	<main class="clearfix">
-				<div class="post">
+				<div class="posts">
 					<div>
 						<form action=admin.php method="post" enctype="multipart/form-data">
 						<p><label for="">Выберите файл со статьей: </label>

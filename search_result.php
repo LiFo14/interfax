@@ -31,7 +31,7 @@
 		<div class="middlebar">
 			<div class="middleimg left">
         <a href="index.php">
-					<img alt="Interfax" src="img/logo.png"/>
+					<img alt="Interfax" src="../img/logo.png"/>
 				</a>
 			</div>
 			<div class="middlemainbar">
@@ -40,7 +40,7 @@
 		</div>
 	</header>
 	<main class="clearfix">
-				<div class="post">
+				<div class="search_post">
           <?php
             checkOutPosts($_GET['q']);
           ?>
@@ -50,51 +50,55 @@
   					<input type="submit" name="search" value="search">
   				</form>
 				</div>
-        <div class="side_bar_search">
-          <p class="side_bar_headers"><b>СЮЖЕТЫ</b></p>
-          <ul class="news_list1">
-            <li><a class="news_link1" href="#">Дизельный скандал Volkswagen<a></li>
-            <li><a class="news_link1" href="#">Борьба с "Исламским государством"<a></li>
-            <li><a class="news_link1" href="#">Кризис на Украине<a></li>
-            <li><a class="news_link1" href="#">Наплым мигрантов в Европу<a></li>
-            <li><a class="news_link1" href="#">Протесты в Молдавии<a></li>
-            <li><a class="news_link1" href="#">Все сюжеты<a></li>
-          </ul> <br>
-          <p class="side_bar_headers"><b>САМОЕ ЧИТАЕМОЕ</b></p>
-          <ul class="news_list2">
-            <li>
-              <a class="news_link2" href="#">Москва<br><a>
-                <span class="side_bar_news">Штрафы с грузовиков с 15 ноября будут взиматься только в Подмосковье</span><br><br>
-                <hr noshade size="1" color="grey"><br>
-            </li>
-            <li>
-              <a class="news_link2" href="#">В МИРЕ<br><a>
-                <span class="side_bar_news">СМИ назвали противодействие РФ целью переброски в Турцию американских F-15С</span><br><br>
-                <hr noshade size="1" color="grey"><br>
-            </li>
-            <li>
-              <a class="news_link2" href="#">Экономика<br><a>
-                <span class="side_bar_news">ЕС попросил Россию не вводить продуктовое эмбарго для Украины</span><br><br>
-            </li>
-          </ul> <br>
-          <p class="side_bar_headers"><b>ФОТОГАЛЕРЕИ</b></p>
-          <ul class="news_list2">
-            <li>
-              <a class="news_link2" href="#">
-                <img src="img/photo1.png" alt="Церемония вручения"/>
-              </a>
-            </li>
-        </div>
-      </main>
-      <div class="footer">
-        <div class="copyright">
-          <a href="index.php">
-            <img alt="Interfax" src="img/flogon.png"/>
-          </a>
-          <span>Copyright © 1991—2015 Interfax. Все права защищены.
-          Вся информация, размещенная на данном веб-сайте, предназначена только для персонального пользования и не подлежит дальнейшему воспроизведению и/или распространению в какой-либо форме, иначе как с письменного разрешения Интерфакса.
-          </span>
-        </div>
-      </div>
-      </body>
-    </html>
+				<div class="side_bar">
+					<p class="side_bar_headers"><b>СЮЖЕТЫ</b></p>
+					<ul class="news_list1">
+						<li><a class="news_link1" href="#">Дизельный скандал Volkswagen<a></li>
+						<li><a class="news_link1" href="#">Борьба с "Исламским государством"<a></li>
+						<li><a class="news_link1" href="#">Кризис на Украине<a></li>
+						<li><a class="news_link1" href="#">Наплым мигрантов в Европу<a></li>
+						<li><a class="news_link1" href="#">Протесты в Молдавии<a></li>
+						<li><a class="news_link1" href="#">Все сюжеты<a></li>
+					</ul> <br>
+					<p class="side_bar_headers"><b>САМОЕ ЧИТАЕМОЕ</b></p>
+					<ul class="news_list2">
+						<li>
+							<a class="news_link2" href="#">Москва<br><a>
+								<span class="side_bar_news">Штрафы с грузовиков с 15 ноября будут взиматься только в Подмосковье</span><br><br>
+								<hr noshade size="1" color="grey"><br>
+						</li>
+						<li>
+							<a class="news_link2" href="#">В МИРЕ<br><a>
+								<span class="side_bar_news">СМИ назвали противодействие РФ целью переброски в Турцию американских F-15С</span><br><br>
+								<hr noshade size="1" color="grey"><br>
+						</li>
+						<li>
+							<a class="news_link2" href="#">Экономика<br><a>
+								<span class="side_bar_news">ЕС попросил Россию не вводить продуктовое эмбарго для Украины</span><br><br>
+						</li>
+					</ul><br>
+					<p class="side_bar_headers"><b>ФОТОГАЛЕРЕИ</b></p>
+					<ul class="news_list2">
+						<li>
+							<a class="news_link2" href="#">
+								<img src="../img/photo1.png" alt="Церемония вручения"/>
+							</a>
+						</li>
+				</div>
+			</main>
+			<footer>
+				<div class="copyright">
+					<a href="index.php">
+						<img alt="Interfax" src="../img/flogon.png"/>
+					</a>
+					<span>Copyright © 1991—2015 Interfax. Все права защищены.
+					Вся информация, размещенная на данном веб-сайте, предназначена только для персонального пользования и не подлежит дальнейшему воспроизведению и/или распространению в какой-либо форме, иначе как с письменного разрешения Интерфакса.
+				</span>
+					<div class="news_add">
+						<a href="admin.php">Добавить новость</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+		</body>
+		</html>

@@ -70,7 +70,7 @@
 		<hr class="news_line"/>
 		<div id="posts">
 			<div class="post">
-				<div class="main_news_wrap">
+			<!--	<div class="main_news_wrap">-->
 					<p class="news">В ФБР заявили о возможных атаках террористов в США по примеру парижских</p>
 					<hr class="news_splitter"/>
 					<p class="news">В Москве у дипмиссии Франции усилены меры безопасности</p>
@@ -106,7 +106,7 @@
 					<p class="news">Объем крупных пожертвований в 2014 году упал на 10%</p>
 					<hr class="news_splitter"/>
 					<p class="news">Турция предупреждала власти Франции об одном из смертников</p>
-				</div>
+				<!--</div>-->
 			</div>
 			<div class="extra_post">
 				<ul>
@@ -160,7 +160,7 @@
 				</li>
 		</div>
 	</main>
-	<div class="footer">
+	<footer>
 		<div class="copyright">
 			<a href="index.php">
 				<img alt="Interfax" src="img/flogon.png"/>
@@ -172,7 +172,7 @@
 				<a href="admin.php">Добавить новость</a>
 			</div>
 		</div>
-	</div>
+	</footer>
 </div>
 </body>
 </html>

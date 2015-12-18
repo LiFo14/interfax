@@ -20,16 +20,16 @@ body {
     padding: 0;
 }
 header {
-    width: 65%;
+    width: 85%;
     margin: 0 auto;
 }
 
 header .topbar {
-    width: 96%;
+    width: 97%;
     padding: 0.3% 1.5%;
     background-color: #202736;
     color: #fff;
-    font-size: 85%;
+    font-size: 13px;
     height:
 }
 .topbar ul.top_navigation {
@@ -37,23 +37,23 @@ header .topbar {
     display: block;
 }
 .topbar ul.top_navigation li.top {
-    padding: 1% 0.1%;
+    padding: 1% 0.05%;
     display: inline-block;
 }
 .topbar ul.top_navigation li.followers {
-    margin-left: 5px;
+    margin-left: 3px;
     padding: 5px 10px;
     background-color: #009075;
     border-radius: 35px;
     display: inline-block;
-    font-size: 14px;
-    width: 17%;
+    font-size: 13px;
+
     text-align: center;
 }
 .middlebar {
-    width: 90%;
+    width: 97%;
     margin: 0 auto;
-    height: 13%;
+    height: 100px;
     vertical-align: middle;
     overflow: hidden;
 }
@@ -108,7 +108,7 @@ header .topbar {
     border-spacing: 10px 13px;
     background: #f7f7f7;
     margin: 0 auto;
-    width: 93%;
+    width: 97%;
 }
 .bottombar .main a {
     display: table-cell;
@@ -130,12 +130,13 @@ header .topbar {
     line-height: 17px;
     height: 100%;
 }
-.bottombar .main h3>span.green {
+.bottombar .main h3 > span.green {
     color: #009075;
 }
 .bottombar .line {
-    margin: 1px auto 0;
-    width: 93%;
+    margin: 0 auto;
+    margin-top: 5px;
+    width: 97%;
     position: relative;
     border-bottom: 3px solid #ebebeb;
 }
@@ -171,6 +172,7 @@ input[type=text] {
 	margin: 0 0 0 0;
   border: 1px solid #999;
   border-radius: 0;
+  width: 180px;
   -webkit-appearance: none;
 }
 
@@ -178,23 +180,22 @@ input[type=text] {
 /* Sections */
 
 main {
-    width: 60%;
-    margin: 1% auto;
-    height: 900px;
-    margin-bottom: 0%;
+  width: 82%;
+  margin: 15px auto;
+  height: 900px;
 }
 
-#posts {
-	position: absolute;
-	width: 100%;
+main #posts {
+  width: 74%;
 	margin: 0;
 	height: 100%;
+  float: left;
 }
 
 hr.news_line {
 	margin: 0;
 	padding: 0;
-	width: 77%;
+	width: 74%;
 	border: none;
 	border-top: 1px dotted #ccc;
 	color: #c0c0c0;
@@ -211,28 +212,26 @@ hr.news_line:after {
 }
 
 .post {
-	width: 75%;
-	height: 300px;
-	margin-right: 20%;
-	float: left;
+	margin-right: 0;
 	display: inline;
+  position: absolute;
+  margin: 0 30% 0 0;
+  width: 45%;
+  border-left: 1px solid #ccc;
 }
 
 .search_res a {
   text-decoration: none;
 }
-
+/*
 .main_news_wrap {
-	margin: 0 55% 0 0;
-	border-left: 1px solid #ccc;
-	float: left;
-}
 
+}
+*/
 .extra_post {
 	position: absolute;
-	margin: 0 0 0 34%;
-	width: 13%;
-	float: right;
+	margin: 0 0 0 46%;
+  width: 15%;
 }
 
 .extra_post ul {
@@ -265,10 +264,10 @@ hr.news_line:after {
 .side_bar {
 	position: relative;
 	width: 20%;
-	margin: -2% 0 0 48%;
+	margin: -17px 0 0 0;
 	padding: 0;
-	float: right;
 	display: block;
+  float: right;
 }
 
 .side_bar_search {
@@ -282,7 +281,7 @@ hr.news_line:after {
 
 .side_bar_search a {
   text-decoration: none;
-	
+
 }
 
 .news_list1 {
@@ -356,33 +355,30 @@ p.side_bar_headers {
 
 /* Footer */
 
-.footer {
-	width: 64.5%;
-	margin-top: 0;
-	margin-left: 17.5%;
-  margin-bottom: 0;
+footer {
+	width: 85%;
+	margin: 0 auto;
 	position: relative;
 	background-color: #202736;
 	height: 200px;
 }
 
-.footer .copyright {
-  position: relative;
+.copyright {
+  padding: 0;
+  position: absolute;
+  margin-top: 40px;
 	font-size: 65%;
 	color: white;
 }
 
 .copyright a {
-  position: absolute;
-  margin-top: 50px;
-  margin-left: 15px;
+  margin-left: 40px;
+  display: inline-block;
 }
 
 .copyright span {
-  position: absolute;
-  margin-top: 70px;
-  margin-left: 240px;
-  width: 75%;
+  margin-left: 10px;
+  display: inline-block;
 }
 
 .news_add a {

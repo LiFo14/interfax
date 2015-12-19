@@ -39,7 +39,7 @@
 			</div>
 		</div>
 		<div class="bottombar clearfix">
-			<div class="line">
+			<div class="menu">
 				<h4 class="active"><a href="/">Главное</a></h4>
 				<h4 class="inactive"><a href="/">В России</a></h4>
 				<h4 class="inactive"><a class="nav_link" href="/">В мире</a></h4>
@@ -70,12 +70,11 @@
 		<hr class="news_line"/>
 		<div id="posts">
 			<div class="post">
-			<!--	<div class="main_news_wrap">-->
+					<p class="news"><a href="posts/post1.php">Общественная палата призвала к борьбе с пропагандой терроризма в соцсетях</a></p>
+					<hr class="news_splitter"/>
+					<p class="news"><a href="posts/post2.php">Аресты в Париже</a></p>
+					<hr class="news_splitter"/>
 					<p class="news">В ФБР заявили о возможных атаках террористов в США по примеру парижских</p>
-					<hr class="news_splitter"/>
-					<p class="news">В Москве у дипмиссии Франции усилены меры безопасности</p>
-					<hr class="news_splitter"/>
-					<p class="news">В Союзе туриндустрии заявили о возможной отмене туров в Париж на ближайшие дни</p>
 					<hr class="news_splitter"/>
 					<p class="news">Исинбаева выразила готовность сдать допинг-пробу в прямом эфире</p>
 					<hr class="news_splitter"/>
@@ -106,7 +105,6 @@
 					<p class="news">Объем крупных пожертвований в 2014 году упал на 10%</p>
 					<hr class="news_splitter"/>
 					<p class="news">Турция предупреждала власти Франции об одном из смертников</p>
-				<!--</div>-->
 			</div>
 			<div class="extra_post">
 				<ul>
@@ -119,8 +117,6 @@
 					<li>Обама выступил против увеличения числа борющихся с ИГ американских военных</li><br>
 					<li>Олланд назвал Бельгию местом организации парижских терактов</li><br>
 					<li>Путин "на полях" саммита G20 пообщался с премьерами Канады и Австралии</li><br>
-					<!--<li>Россия не будет бомбить часть группировок сирийской оппозиции</li><br>
-					<li>Арбитраж признал "ЛУКОЙЛ" победителем по Восточно-Таймырскому участку</li><br>-->
 				</ul>
 			</div>
 		</div>
@@ -173,6 +169,5 @@
 			</div>
 		</div>
 	</footer>
-</div>
 </body>
 </html>

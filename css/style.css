@@ -139,17 +139,17 @@ header .topbar {
 .bottombar .main h3 > span.green {
     color: #009075;
 }
-.bottombar .line {
+.bottombar .menu {
     margin: 0 auto;
     margin-top: 5px;
     width: 97%;
     position: relative;
     border-bottom: 3px solid #ebebeb;
 }
-.bottombar .line h4.active {
+.bottombar .menu h4.active {
     background: url(http://www.interfax.ru/img/bmenu.png) center bottom no-repeat;
 }
-.bottombar .line h4 {
+.bottombar .menu h4 {
     display: inline-block;
     font-size: 95%;
     font-weight: bold;
@@ -159,11 +159,11 @@ header .topbar {
     position: relative;
     top: 3px
 }
-.bottombar .line h4.active a{
+.bottombar .menu h4.active a{
     color: #1f2829;
     text-decoration: none;
 }
-.bottombar .line h4.inactive a{
+.bottombar .menu h4.inactive a{
     color: #009075;
     text-decoration: none;
 }
@@ -224,6 +224,11 @@ hr.news_line:after {
   margin: 0 30% 0 0;
   width: 45%;
   border-left: 1px solid #ccc;
+}
+
+.post a {
+  text-decoration: none;
+  color: #000;
 }
 
 .search_post {

@@ -57,5 +57,19 @@
 				</form>
 			</div>
 		</div>
+	</main>
+	<footer>
+		<div class="copyright">
+			<a href="index.php">
+				<img alt="Interfax" src="img/flogon.png"/>
+			</a>
+			<span>Copyright © 1991—2015 Interfax. Все права защищены.
+			Вся информация, размещенная на данном веб-сайте, предназначена только для персонального пользования и не подлежит дальнейшему воспроизведению и/или распространению в какой-либо форме, иначе как с письменного разрешения Интерфакса.
+		</span>
+			<div class="news_add">
+				<a href="admin.php">Добавить новость</a>
+			</div>
+		</div>
+	</footer>
 	</body>
 </html>

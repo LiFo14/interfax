@@ -2,7 +2,7 @@
 
 	function connectToDB() {
 	  	global $link, $dbhost, $dbuser, $dbpass, $dbname;
-	    $link = mysql_connect("$dbhost", "$dbuser", "$dbpass") or die("Can not connect: ".mysql_error());
+	    $link = mysql_connect("$dbhost", "$dbuser", "$dbpass") or die("Невозможно установить соединение: ".mysql_error());
 		mysql_select_db($dbname, $link);
 	}
 
@@ -15,7 +15,7 @@
 		$result = easyQuery();
 		while ($row = mysql_fetch_array($result)) {
 			$path = $row['news_path'];
-			$output = shell_exec("python lookThough.py $path $cont");
+			$output = shell_exec("python lookThrough.py $path $cont");
 			if ($output == 1) {
 				$paths[] = $path;
 			}
@@ -25,11 +25,12 @@
 
 	function easyQuery($id) {
 		if (isset($id)) {
+			$id = strval($id);
 			$sql = "SELECT * FROM news WHERE id='$id'";
 		} else {
 			$sql = "SELECT * FROM news";
 		}
-		$result = mysql_query($sql) or die("Error occurred - ".mysql_error($link));
+		$result = mysql_query($sql) or die("Произошла ошибка: ".mysql_error($link));
 		return $result;
 	}
 
@@ -105,14 +106,16 @@
 
 	function addToDb($path) {
 		global $link;
+		$path = strval($path);
 		$sql = "INSERT INTO news (news_path) VALUES ('$path')";
-		$result=mysql_query($sql, $link) or die("Died inserting into db.  Error returned if any: ".mysql_error($link));
+		$result=mysql_query($sql, $link) or die("Произошла ошибка: ".mysql_error($link));
 	}
 
 	function deleteFromDb($id){
 		global $link;
+		$id = strval($id);
 		$sql_del = "DELETE FROM news WHERE id='$id'";
-		mysql_query($sql_del, $link) or die("Error occured 1 ".mysql_error($link));
+		mysql_query($sql_del, $link) or die("Произошла ошибка: ".mysql_error($link));
 	}
 
 	function getFullData() {

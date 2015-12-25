@@ -12,7 +12,7 @@ def lookFor():
             pullWord(line)
 
 def pullWord(line):
-    print(line[9:-6])
+    print(line[4:-6])
 
 if __name__ == "__main__":
     lookFor()
